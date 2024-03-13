@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+
+    padding: 0; /* Remove default body padding */
+    font-family: Arial, sans-serif;
+}
+
+/* Updated CSS content for navigation bar */
+header {
+    /* background-image: url('./header.png'); Replace 'your-header-image-path.jpg' with the path to your header image */
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999; /* Ensure navigation bar is on top */
+    text-align: center; /* Center align navigation items */
+}
+
+header h1{
+    margin-top: 7px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Center align navigation items */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Add padding to increase clickable area */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+nav ul li a:hover {
+    background-color: #4caf50; /* Darker green color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff; /* White text color */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color:rgba(0, 0, 0, 0.2); /* Adjust the last value (alpha) to change darkness */
+  }
+
+.home-bg{
+    /* height: inherit;
+    width: inherit; */
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+.rectangular-box {
+    display: block; 
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.6); /* Light gray background */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    text-align: left;
+    animation: shake 0.5s ease-in-out; /* Apply animation */
+}
+
+.rectangular-box h2 {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: green; /* Set button background color */
+    color: white; /* Set button text color */
+    padding: 10px 140px;
+    border: none;
+    border-radius: 20px; /* Make button round */
+    cursor: pointer;
+    
+    transition: background-color 0.3s;
+}
+
+.required {
+    color: red; /* Red color for asterisk */
+}
+
+.asterisk {
+    color: red; /* Red color for asterisk */
+    font-style: italic; /* Make the text italic */
+    font-size: 0.8em; /* Make the text smaller */
+}
+.asterisk-text {
+    font-style: italic; /* Make the text italic */
+    font-size: 0.8em; /* Make the text smaller */
+}
+
+button:hover {
+    background-color: darkgreen; /* Change button background color on hover */
+}
+/* Active link style */
+nav ul li a.active {
+    background-color: #4caf50; /* Darker green color for active link */
+    border-radius: 5px; /* Rounded corners for active link */
+}
+
+
+h1 {
+    margin: 0;
+    color: #ffffff; /* White text color */
+}
+
+/* Active link style */
+nav ul li a.active {
+    background-color: #4caf50; /* Darker green color for active link */
+    border-radius: 5px; /* Rounded corners for active link */
+}
+
+.green-section {
+    /*background-image: url('/home/atharva/IIT Goa/CS102/background.png');*/
+    padding: 50px 0;
+    position: relative; /* Required for absolute positioning of flowers */
+}
+.content-box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 150px auto 0;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+    z-index: 10;
+}
+
+.content-box:hover {
+    transform: scale(1.05); /* Enlarge the box by 5% on hover */
+}
+
+footer {
+    background-color: #3fb54a; /* Lush green */
+    color: #ffffff;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.flower {
+    position: absolute;
+    width: 10px; /* Decreased size for better visibility */
+    height: 10px; /* Decreased size for better visibility */
+    background: radial-gradient(circle at 50% 50%, #FFD700 0%, transparent 40%);
+    border-radius: 50%;
+    z-index: 9999; /* Ensure flowers appear on top of other content */
+    pointer-events: none; /* Clicks should not be intercepted by flowers */
+    animation: burst 1s ease forwards; /* Apply burst animation */
+}
+
+@keyframes burst {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
