@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+body{
+    background-image: url(pic.webp);
+    background-size: cover;
+    /* background-position: center; */
+}
+.quiz-container {
+    max-width: 600px;
+    position: absolute;
+    margin: 200px 500px;
+    padding: 20px;
+    background-color: none;
+    height: 300px;
+}
+h1{
+    color: rgb(239, 134, 5);
+}
+
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00d9ff;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: bisque;
+}
+
+#choices button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 60px;
+    color: #544423;
+    background-color:#a2a39b;
+}
+
+#submit {
+    background-color: #e43a2c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    
+        <div class="quiz-container">
+            <h1>Quiz</h1>
+            <div id="question"></div>
+            <div id="choices"></div>
+            <button id="submit">Submit Answer</button>
+            <p id="score"></p>
+        </div>
+    
+    <script src="vinay.js"></script>
+</body>
+</html>
